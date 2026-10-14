@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>DJ Kencoolie</title>
+<meta name="description" content="DJ Kencoolie. Afrobeats, Amapiano and Dancehall for private events, corporate nights and clubs. Based in Los Angeles.">
+<meta property="og:title" content="DJ Kencoolie">
+<meta property="og:description" content="Afrobeats, Amapiano and Dancehall. Book Kencoolie for your next event.">
+<meta property="og:image" content="images/about-boat.jpg">
+<link rel="icon" href="images/logo-white.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="site-header" id="site-header">
+  <a class="brand" href="#home" aria-label="Kencoolie home">
+    <img class="logo-light" src="images/logo-white.png" alt="Kencoolie">
+    <img class="logo-dark" src="images/logo-black.png" alt="" aria-hidden="true">
+  </a>
+  <div class="header-right">
+    <ul class="header-socials" id="header-socials"></ul>
+    <a class="btn btn-small" href="#book">Book</a>
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false">
+      <span class="sr-only">Menu</span><span class="bars" aria-hidden="true"></span>
+    </button>
+  </div>
+</header>
+
+<nav class="site-nav" id="site-nav" data-open="false" aria-label="Main">
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#mixes">Mixes</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#playlists">Playlists</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#book">Book</a></li>
+  </ul>
+  <ul class="nav-socials" id="nav-socials"></ul>
+</nav>
+
+<main>
+  <!-- HOME -->
+  <section class="home dark" id="home">
+    <div class="home-inner">
+      <img class="home-logo" src="images/logo-white.png" alt="Kencoolie">
+      <p class="home-genres"><span class="g-afro">Afrobeats</span><span class="dot">&bull;</span><span class="g-ama">Amapiano</span><span class="dot">&bull;</span><span class="g-dh">Dancehall</span></p>
+      <p class="home-tag">He understands what moves people. Then he makes them move.</p>
+      <a class="btn" href="#book">Book Kencoolie</a>
+    </div>
+    <a class="scroll-cue" href="#mixes">Scroll</a>
+  </section>
+
+  <!-- BIG PHOTO -->
+  <section class="big-photo" aria-label="Kencoolie crowd photo">
+    <img src="images/crowd.jpg" alt="Packed crowd dancing at a Michigan tailgate set">
+  </section>
+
+  <!-- MIXES -->
+  <section class="section light" id="mixes">
+    <div class="wrap">
+      <h2>Mixes</h2>
+      <p class="sub">Press play. Hear what the night sounds like.</p>
+      <div class="mixes" id="mix-list"></div>
+      <div class="center" id="mix-more"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section dark" id="about">
+    <div class="wrap">
+      <h2>About</h2>
+      <div class="overlap">
+        <img class="overlap-img" src="images/about-boat.jpg" alt="DJ Kencoolie playing a boat party set">
+        <h3 class="overlap-quote"><span>Genre-fluid. Built for the dance floor.</span></h3>
+      </div>
+      <div class="about-copy">
+        <p>DJ Kencoolie is a genre-fluid DJ and cultural tastemaker. He blends Afrobeats, Amapiano, Hip-Hop, R&amp;B, Dancehall, House and Top 40 into nights people remember.</p>
+        <p>From intimate private events to large-scale productions, he creates moments that keep people connected, engaged and moving. Based in Los Angeles. Roots in Ann Arbor.</p>
+      </div>
+      <ul class="highlights">
+        <li><strong>1,000+</strong><span>Headlined the Black Explosion Fashion Show</span></li>
+        <li><strong>Ann Arbor</strong><span>Pioneered Afrobeats and Amapiano nightlife</span></li>
+        <li><strong>Michigan Ross</strong><span>Featured DJ at business school events</span></li>
+        <li><strong>Colombia</strong><span>International performances</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PLAYLISTS -->
+  <section class="section light" id="playlists">
+    <div class="wrap">
+      <h2>Playlists</h2>
+      <p class="sub">Find the perfect vibe for the pregame, the cookout or the drive.</p>
+      <div class="playlists" id="playlist-list"></div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="section dark" id="reviews">
+    <div class="wrap">
+      <h2>Reviews</h2>
+      <p class="sub">Words from the people who booked the night.</p>
+      <div class="reviews" id="review-list"></div>
+      <div class="center" id="review-cta"></div>
+    </div>
+  </section>
+
+  <!-- BOOK -->
+  <section class="section light" id="book">
+    <div class="wrap">
+      <h2>Book Kencoolie</h2>
+      <p class="sub">Tell me about the night. I reply with availability and a quote within 48 hours.</p>
+
+      <form class="form" id="booking-form" name="booking" method="POST" action="thanks.html" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="booking">
+        <p class="hp"><label>Leave blank <input name="bot-field" id="bot-field"></label></p>
+
+        <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" required autocomplete="name"></div>
+        <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" required autocomplete="email"></div>
+        <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
+        <div class="field"><label for="f-service">Service</label>
+          <select id="f-service" name="service" required>
+            <option value="">Select one</option>
+            <option>DJ set</option><option>DJ and MC</option><option>Custom mix</option><option>Custom playlist</option>
+          </select></div>
+        <div class="field"><label for="f-type">Event type</label>
+          <select id="f-type" name="event_type" required>
+            <option value="">Select one</option>
+            <option>Private party</option><option>Wedding</option><option>Corporate</option><option>Club night</option><option>Campus or nonprofit</option><option>Other</option>
+          </select></div>
+        <div class="field"><label for="f-date">Event date</label><input id="f-date" name="date" type="date" required></div>
+        <div class="field"><label for="f-start">Start time</label><input id="f-start" name="start_time" type="time"></div>
+        <div class="field"><label for="f-end">End time</label><input id="f-end" name="end_time" type="time"></div>
+        <div class="field full"><label for="f-venue">Venue address</label><input id="f-venue" name="venue" required placeholder="Venue name, street, city"></div>
+        <div class="field"><label for="f-guests">Guest count</label>
+          <select id="f-guests" name="guests" required>
+            <option value="">Select one</option>
+            <option>Fewer than 75</option><option>75 to 150</option><option>150 to 300</option><option>More than 300</option>
+          </select></div>
+        <div class="field"><label for="f-budget">Budget</label>
+          <select id="f-budget" name="budget" required>
+            <option value="">Select one</option>
+            <option>Under $500</option><option>$500 to $1,000</option><option>$1,000 to $2,500</option><option>$2,500 to $5,000</option><option>$5,000 to $10,000</option><option>More than $10,000</option>
+          </select></div>
+        <fieldset class="field full"><legend>Genres</legend>
+          <div class="chips">
+            <label><input type="checkbox" name="genres" value="Afrobeats" id="g1"> Afrobeats</label>
+            <label><input type="checkbox" name="genres" value="Amapiano" id="g2"> Amapiano</label>
+            <label><input type="checkbox" name="genres" value="Dancehall" id="g3"> Dancehall</label>
+            <label><input type="checkbox" name="genres" value="Hip-Hop" id="g4"> Hip-Hop</label>
+            <label><input type="checkbox" name="genres" value="R&amp;B" id="g5"> R&amp;B</label>
+            <label><input type="checkbox" name="genres" value="House" id="g6"> House</label>
+            <label><input type="checkbox" name="genres" value="Top 40" id="g7"> Top 40</label>
+            <label><input type="checkbox" name="genres" value="Latin" id="g8"> Latin</label>
+          </div></fieldset>
+        <fieldset class="field"><legend>Clean or explicit</legend>
+          <div class="chips">
+            <label><input type="radio" name="explicit" value="Clean" id="x1"> Clean</label>
+            <label><input type="radio" name="explicit" value="Explicit" id="x2"> Explicit</label>
+          </div></fieldset>
+        <div class="field"><label for="f-attire">Attire or theme</label><input id="f-attire" name="attire" placeholder="All white, black tie, none"></div>
+        <div class="field"><label for="f-artist">Favorite artist</label><input id="f-artist" name="favorite_artist"></div>
+        <div class="field"><label for="f-sound">Sound system</label>
+          <select id="f-sound" name="sound">
+            <option>Venue has sound</option><option>Need sound provided</option><option>Not sure</option>
+          </select></div>
+        <div class="field full"><label for="f-notes">Tell me about the occasion</label><textarea id="f-notes" name="notes" placeholder="The vibe, must-plays, do-not-plays"></textarea></div>
+        <div class="field full"><label for="f-heard">How did you hear about Kencoolie</label><input id="f-heard" name="heard"></div>
+        <div class="full form-end">
+          <button class="btn" type="submit">Send inquiry</button>
+          <p class="status" id="form-status" hidden></p>
+        </div>
+      </form>
+
+      <p class="alt-contact">Prefer email? <span class="email" id="email-text">djkencoolie@gmail.com</span> <button class="copy" id="copy-email" type="button">Copy</button></p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer dark">
+  <img src="images/logo-white.png" alt="Kencoolie">
+  <ul class="footer-socials" id="footer-socials"></ul>
+  <small>&copy; <span id="year">2026</span> DJ Kencoolie. All rights reserved.</small>
+</footer>
+
+<script src="js/content.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
