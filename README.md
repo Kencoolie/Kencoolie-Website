@@ -1,9 +1,15 @@
 # DJ Kencoolie website
 
-## Update content
-Edit `js/content.js` only. Add mixes, playlists, reviews and social links there, then redeploy.
+One-page site for DJ Kencoolie. Hosted on Netlify. Every commit to `main` redeploys the site and costs 15 Netlify credits, so batch edits into one commit.
 
-## Deploy (Netlify)
-1. Go to app.netlify.com. Open the Kencoolie site.
-2. Go to Deploys. Drag this whole folder onto the upload box.
-3. Booking inquiries appear under Forms. Turn on email alerts under Site configuration > Notifications > Form submission notifications.
+## Files
+- `index.html`: the whole site. Styles, photos and scripts are built in.
+- `thanks.html`: page shown after someone sends a booking inquiry.
+
+## Update content
+Open `index.html` and find the block marked `EDIT SITE CONTENT BELOW`.
+Add mixes, playlists, reviews and social links there, following the example lines.
+Do not edit anything outside that block.
+
+## Booking form
+Inquiries land in Netlify under Forms. Email alerts: Site configuration > Notifications > Form submission notifications.
